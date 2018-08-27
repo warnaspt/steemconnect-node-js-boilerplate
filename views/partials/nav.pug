@@ -1,13 +1,13 @@
 nav(class="navbar navbar-expand-lg navbar-dark bg-dark")
-  a.navbar-brand(href="/") Boilerplate
+  a.navbar-brand(href="/") SteemPT
   .collapse.navbar-collapse
     .navbar-nav
       a.nav-item.nav-link(href="/feed/trending") Trending
-      a.nav-item.nav-link(href="/feed/created") New
+      a.nav-item.nav-link(href="/feed/created") Novo
     .navbar-nav.ml-auto
       if user
-        a.nav-item.nav-link.btn.btn-outline-secondary(href="/post") Create Post
-        a.nav-item.nav-link(href=`/@${user.name}`) Profile
-        a.nav-item.nav-link(href="/auth/logout") Logout
+        a.nav-item.nav-link.btn.btn-outline-secondary(href="/post") Criar Artigo
+        a.nav-item.nav-link(href=`/@${user.name}`) Perfil
+        a.nav-item.nav-link(href="/auth/logout") Sair
       else
-        a.btn.btn-primary(href="/auth") Login With SteemConnect
+        a.btn.btn-primary(href="/auth") Login com SteemConnect

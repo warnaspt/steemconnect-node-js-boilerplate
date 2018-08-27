@@ -5,7 +5,7 @@
 .create-post,
 .single {
   padding: 30px 0;
-  max-width: 520px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -33,22 +33,32 @@
 }
 
 img {
-  max-width: 100%;
+  max-width: 250px;
+  max-height: 250px;
+  float: left;
+  border-radius: 5px;
+  margin: 5px;
 }
 .item {
   border: solid 1px #e1e0e0;
   margin: 30px 0;
   border-radius: 3px;
   box-shadow: 0 0 13px rgba(0,0,0,0.05);
+  max-width: 250px;
+  max-height: 450px;
+  border-radius: 5px;
 }
 .item__image {
-  min-width: 100%;
+  min-width: 250px;
+  max-height: 250px;
 }
 .item__meta {
   padding: 15px;
+  min-width: 250px;
+  max-height: 400px;
 }
 .comment {
-  margin: 15px 0;
+  margin: 15px 250px;
 }
 .comment-level-1 {
   padding-left: 15px;
@@ -62,11 +72,12 @@ img {
 
 .meta form {
   display: inline-block;
+  float: left;
 }
 
 input, label, textarea, button {
-  margin: 15px 0;
-  width: 100%;
+  margin: 15px 250px;
+  width: 250px;
   border-radius: 3px;
   padding: 5px;
 }
@@ -76,11 +87,11 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-  outline: 0;
+  outline: 250px;
 }
 
 textarea {
-  min-height: 400px;
+  min-height: 250px;
 }
 
 button, input[type="submit"] {
@@ -88,11 +99,11 @@ button, input[type="submit"] {
 }
 
 .vote {
-  width: 100px;
+  width: 50px;
 }
 
 .comment-message {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .send-comment {
   cursor: pointer;

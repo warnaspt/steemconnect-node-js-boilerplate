@@ -140,13 +140,13 @@ function displayContent(result, initial){
         <div class="item " data-post-id="${post.id}" data-url="${post.url}" data-permlink="${ post.permlink }">
           <img class="item__image " src="https://steemitimages.com/520x520/${image}" onerror="">
           <div class="item__meta">
-            <a href="${post.url}"><h3>${post.title}</h3></a>
+            <a href="${post.url}"><h6>${post.title}</h6></a>
             <a href="/@${post.author}"><span>@${post.author}</span></a>
             <form method="post">
               <input type="hidden" name="postId" value="${post.id}">
               <input type="hidden" name="author" value="${post.author}">
               <input type="hidden" name="permlink" value="${post.permlink}">
-              <input type="submit" class="vote" value="Vote">
+              <input type="submit" class="vote" value="Votar">
             </form>
           </div>
         </div>
@@ -298,7 +298,7 @@ function appendSinglePost(post, users){
     <input type="hidden" name="postId" value="${post.id}">
     <input type="hidden" name="author" value="${post.author}">
     <input type="hidden" name="permlink" value="${post.permlink}">
-    <input type="submit" class="vote" value="Vote">
+    <input type="submit" class="vote" value="Votar">
   </form>`
   let commentBox = `
   <div>
@@ -357,7 +357,7 @@ createCommentTemplate = (post) => {
             <input type="hidden" name="postId" value="${post.id}">
             <input type="hidden" name="author" value="${post.author}">
             <input type="hidden" name="permlink" value="${post.permlink}">
-            <input type="submit" class="vote" value="Vote">
+            <input type="submit" class="vote" value="Votar">
           </form>
           <span class="sc-item__divider">|</span>
           <span class="sc-item__votecount">${post.votes} ${voteMessage} </span>
@@ -538,7 +538,7 @@ $('main').on('click', '.vote',(e) => {
     if (response.error) {
       $(`<span>${response.error.error_description}</span>`).insertAfter($voteButton)
     } else {
-      $('<span>Voted!</span>').insertAfter($voteButton)
+      $('<span>Votado!</span>').insertAfter($voteButton)
     }
   })
 })

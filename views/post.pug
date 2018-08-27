@@ -4,14 +4,14 @@ block content
   include partials/nav
 
   main.create-post
-    h1 Create Post
+    h1 Criar Artigo
     form(action="/post/create-post/" method="post")
-      label Title
+      label Titulo
       input(type="text" name="title")
-      label Blog Post
+      label Conteudo
       textarea(name="post")
       label Tags
       input(type="text" name="tags")
-      button.btn.btn-primary(type="submit") Submit
-      p Posting as #{name}
+      button.btn.btn-primary(type="submit") Publicar
+      p Publicar como #{name}
       p #{msg}
